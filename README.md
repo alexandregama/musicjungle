@@ -30,3 +30,7 @@ sudo apt-get install openjdk7-jre tomcat7
 http://192.168.50.10:8080
 ```
 
+#### To destroy the web machine
+```
+vagrant destroy
+```
