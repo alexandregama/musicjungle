@@ -48,14 +48,14 @@ Working with Puppet
 ```
 
 #### Create command to update apt-get
-```
+```ruby
 exec { "apt-update":
   command => "/usr/bin/apt-get update"
 }
 ```
 
 #### Install openjdk and tomcat7
-```
+```ruby
 package { ["openjdk-7-jre", "tomcat7"]:
   ensure => installed,
   require => Exec["apt-get"]
