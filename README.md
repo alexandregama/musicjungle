@@ -66,3 +66,8 @@ package { ["openjdk-7-jre", "tomcat7"]:
 ```
   sudo puppet apply /vagrant/manifests/web.pp
 ```
+
+#### Executing puppet file in debbug mode
+```
+  sudo puppet apply -dv /vagrant/manifests/web.pp
+```
