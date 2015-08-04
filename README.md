@@ -39,4 +39,25 @@ http://192.168.50.10:8080
 vagrant destroy
 ```
 
+Working with Puppet
+---------------------
 
+#### Create web.pp file into manifests directory
+```
+  Vagrafile-directory/manifests/web.pp
+```
+
+#### Create command to update apt-get
+```
+exec { "apt-update":
+  command => "/usr/bin/apt-get update"
+}
+```
+
+#### Install openjdk and tomcat7
+```
+package { ["openjdk-7-jre", "tomcat7"]:
+  ensure => installed,
+  require => Exec["apt-get"]
+}
+```
