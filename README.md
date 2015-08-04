@@ -1,5 +1,9 @@
 # Musicjungle with Vagrant and Puppet
 
+Working with Vagrant
+---------------------
+
+
 ##### Executing vagrant into Vagrantfile directory
 ```
 vagrant up
@@ -34,3 +38,5 @@ http://192.168.50.10:8080
 ```
 vagrant destroy
 ```
+
+
