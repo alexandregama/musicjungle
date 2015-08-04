@@ -61,3 +61,8 @@ package { ["openjdk-7-jre", "tomcat7"]:
   require => Exec["apt-get"]
 }
 ```
+
+#### Executing puppet file
+```
+  sudo puppet apply /vagrant/manifests/web.pp
+```
